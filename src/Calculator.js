@@ -68,7 +68,8 @@ const Calculator = () => {
         <button onClick={() => dispatch({ type: CLEAR })}>CLEAR</button>
       </div>
       <div>
-        <h2>RESULT : {state.result}</h2>
+        <h2>Result</h2>
+        <button>{state.result}</button>
       </div>
     </div>
   );
