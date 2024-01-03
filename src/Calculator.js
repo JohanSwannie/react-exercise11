@@ -14,19 +14,19 @@ const CLEAR = "CLEAR";
 
 const reducer = (state, action) => {
   if (action.type === "CHECK_NUM_ONE") {
-    return { ...state, num1: action.number };
+    return { ...state, number1: action.number };
   }
 
   if (action.type === "CHECK_NUM_TWO") {
-    return { ...state, num2: action.number };
+    return { ...state, number2: action.number };
   }
 
   if (action.type === "ADD") {
-    return { ...state, result: state.num1 + state.num2 };
+    return { ...state, result: state.number1 + state.number2 };
   }
 
   if (action.type === "SUBTRACT") {
-    return { ...state, result: state.num1 - state.num2 };
+    return { ...state, result: state.number1 - state.number2 };
   }
 
   if (action.type === "CLEAR") {
