@@ -44,7 +44,7 @@ const Calculator = () => {
         {numbers.map((number) => (
           <button
             key={number}
-            onClick={() => dispatch({ type: CHECK_NUM_ONE, number })}
+            onClick={() => dispatch({ type: CHECK_NUM_ONE, number: number })}
           >
             {number}
           </button>
@@ -55,7 +55,7 @@ const Calculator = () => {
         {numbers.map((number) => (
           <button
             key={number}
-            onClick={() => dispatch({ type: CHECK_NUM_TWO, number })}
+            onClick={() => dispatch({ type: CHECK_NUM_TWO, number: number })}
           >
             {number}
           </button>
